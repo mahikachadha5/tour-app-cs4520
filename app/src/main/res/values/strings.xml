@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Project4</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="first_name">First Name</string>
+    <string name="view_tours">View Tours</string>
+    <string name="welcome_user">Welcome, user!</string>
+    <string name="save_tour">Save Tour</string>
+    <string name="add_recording_video">Add Recording / Video</string>
+    <string name="enter_a_name_for_your_tour">Enter a name for your tour!</string>
+    <string name="add_a_tour_description">Add a tour description</string>
+    <string name="hi_user_where_do_you_want_to_go">Hi, user. Where do you want to go?</string>
+    <string name="tour_name">Tour Name</string>
+    <string name="tour_description">Tour Description</string>
+    <string name="play_saved_video_audio">Play Saved Video / Audio</string>
+    <string name="edit_tour">Edit Tour</string>
+    <string name="your_tours">Your Tours</string>
+    <string name="back_to_dashboard">Back to Dashboard</string>
+    <string name="log_in">Log In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+</resources>

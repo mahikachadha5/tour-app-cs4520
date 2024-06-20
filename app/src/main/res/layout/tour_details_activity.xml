@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding = "24dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="50dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/back_button_icon_background"
+                android:contentDescription="@string/back_to_dashboard"
+                android:gravity="center"
+                android:src="@drawable/back_button_icon_foreground" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Tour Details"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/details_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/tour_name"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/details_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/tour_description"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="337dp"
+            android:layout_height="196dp"
+            android:layout_gravity="center"
+            map:layout_constraintTop_toBottomOf="@+id/user_details"
+            tools:context=".DashboardActivity" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="337dp"
+            android:layout_height="194dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/edit_tour_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/edit_tour"
+            android:textColor="@color/purpleDark"
+            android:textSize="16sp"
+            map:layout_constraintTop_toBottomOf="@+id/map" />
+
+        <Button
+            android:id="@+id/share_tour_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/purpleDark"
+            android:gravity="center"
+            android:text="Share Tour"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            map:layout_constraintTop_toBottomOf="@+id/map" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
